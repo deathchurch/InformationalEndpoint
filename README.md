@@ -1,4 +1,4 @@
-# Informational Endpoint ![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/deathchurch/informationalendpoint?include_prereleases) ![Nuget](https://img.shields.io/nuget/v/InformationalEndpoint?style=plastic)
+# Informational Endpoint [![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/deathchurch/informationalendpoint?include_prereleases)](https://github.com/deathchurch/InformationalEndpoint/releases/tag/v0.0.3-pre) [![Nuget](https://img.shields.io/nuget/v/InformationalEndpoint?style=plastic)](https://www.nuget.org/packages/InformationalEndpoint)
 
 A library to provide an informational endpoint.
 
