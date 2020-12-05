@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InformationalEndpoint</name>
+    </assembly>
+    <members>
+        <member name="T:InformationalEndpoint.Informational">
+            <summary>
+            Provides extension methods for registering an information endpoint to a <see cref="T:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder"/>.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:InformationalEndpoint.Informational.Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)" -->
+    </members>
+</doc>
