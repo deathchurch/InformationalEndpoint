@@ -16,3 +16,5 @@ Enables you to add an informational status page to your ASP.NET application, whe
 }
 ```
 If any of the values are not able to be determined they will be substituted with ```"N/A"```
+
+The content type of the status page is ```application/json``` and the http response code is ```200```.
