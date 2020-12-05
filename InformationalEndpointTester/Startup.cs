@@ -47,7 +47,7 @@ namespace InformationalEndpointTester
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                Informational.Map(endpoints);
+                Informational.Map(endpoints, "/info");
             });
         }
     }

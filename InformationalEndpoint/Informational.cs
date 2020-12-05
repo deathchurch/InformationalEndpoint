@@ -11,17 +11,18 @@ using System.Threading.Tasks;
 namespace InformationalEndpoint
 {
     /// <summary>
-    /// Provides extension methods for registering an information endpoint to a <see cref="IEndpointRouteBuilder"/>.
+    /// Provides an extension method for <see cref="IEndpointRouteBuilder"/> to add an informational endpoint.
     /// </summary>
-    public class Informational
+    public static class Informational
     {
-        // <summary>
-        /// Enable the informational endpoint (/info), which gives basic information about the program.
+        /// <summary>
+        /// Enable the informational endpoint which gives basic information about the program.
+        /// <param name="endpoints">The <see cref="IEndpointRouteBuilder"/> to add the route to.</param>
+        /// <param name="pattern">The route pattern.</param>
         /// </summary>
-        /// <param name="endpoints">The <see cref="IEndpointRouteBuilder"/>.</param>
-        public static void Map(IEndpointRouteBuilder endpoints)
+        public static void Map(IEndpointRouteBuilder endpoints, string pattern)
         {
-            endpoints.MapGet("/info", context =>
+            endpoints.MapGet(pattern, context =>
             {
                 var env = context.Request.HttpContext.RequestServices.GetRequiredService<IWebHostEnvironment>() 
                     ?? throw new ArgumentNullException(nameof(IWebHostEnvironment), "An IWebHostEnvironment is expected.");

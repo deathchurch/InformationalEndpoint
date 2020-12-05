@@ -6,9 +6,15 @@
     <members>
         <member name="T:InformationalEndpoint.Informational">
             <summary>
-            Provides extension methods for registering an information endpoint to a <see cref="T:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder"/>.
+            Provides an extension method for <see cref="T:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder"/> to add an informational endpoint.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:InformationalEndpoint.Informational.Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)" -->
+        <member name="M:InformationalEndpoint.Informational.Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String)">
+            <summary>
+            Enable the informational endpoint which gives basic information about the program.
+            <param name="endpoints">The <see cref="T:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder"/> to add the route to.</param>
+            <param name="pattern">The route pattern.</param>
+            </summary>
+        </member>
     </members>
 </doc>
