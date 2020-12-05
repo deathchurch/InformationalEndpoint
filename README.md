@@ -1,4 +1,5 @@
-# Informational Endpoint
+# Informational Endpoint ![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/deathchurch/informationalendpoint?include_prereleases) ![Nuget](https://img.shields.io/nuget/v/InformationalEndpoint?style=plastic)
+
 A library to provide an informational endpoint.
 
 Enables you to add an informational status page to your ASP.NET application, when you navigate to the page it will show the following details.
