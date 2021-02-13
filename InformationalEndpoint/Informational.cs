@@ -38,7 +38,7 @@ namespace InformationalEndpoint
                 writer.WriteString("OS", Environment.OSVersion.VersionString ?? "N/A");
                 writer.WriteString("User", Environment.UserName ?? "N/A");
                 writer.WriteString("Path", env.ContentRootPath.ToUpper() ?? "N/A");
-                writer.WriteString("Environment", Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRIONMENT") ?? "N/A");
+                writer.WriteString("Environment", Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "N/A");
                 writer.WriteString("Runtime", RuntimeInformation.FrameworkDescription ?? "N/A");
                 writer.WriteString("Assembly", Assembly.GetEntryAssembly()?.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion ?? "N/A");
                 writer.WriteEndObject();
