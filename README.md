@@ -7,7 +7,7 @@ Enables you to add an informational status page to your ASP.NET application, whe
 ```json
 {
   "Hostname": "<MachineName>",
-  "OS" Version: "<OS Version String>",
+  "OS Version": "<OS Version String>",
   "OS Architecture": "<OS Architecture String>",
   "OS Description": "<OS Description String>",
   "Framework Description": "<Runtime Version Information>",
