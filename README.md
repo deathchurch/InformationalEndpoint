@@ -12,7 +12,7 @@ Enables you to add an informational status page to your ASP.NET application, whe
   "OS Description": "<OS Description String>",
   "Framework Description": "<Runtime Version Information>",
   "Username": "<Username>",
-  "Path": "<The Content Root Path",
+  "Path": "<The Content Root Path>",
   "Environment": "<ASPNETCORE_ENVIRONMENT Variable Value>",
   "Assembly": "<Assembly Information Version>"            
 }
