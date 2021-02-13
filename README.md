@@ -1,4 +1,4 @@
-# Informational Endpoint [![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/deathchurch/informationalendpoint?include_prereleases)](https://github.com/deathchurch/InformationalEndpoint/releases/tag/v0.0.3-pre) [![Nuget](https://img.shields.io/nuget/v/InformationalEndpoint?style=plastic)](https://www.nuget.org/packages/InformationalEndpoint)
+# Informational Endpoint [![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/deathchurch/informationalendpoint?include_prereleases)](https://github.com/deathchurch/InformationalEndpoint/releases/tag/v0.0.4-pre) [![Nuget](https://img.shields.io/nuget/v/InformationalEndpoint?style=plastic)](https://www.nuget.org/packages/InformationalEndpoint)
 
 A library to provide an informational endpoint.
 
@@ -6,13 +6,15 @@ Enables you to add an informational status page to your ASP.NET application, whe
 
 ```json
 {
-  "Server": "<MachineName>",
-  "OS": "<OS Version String>",
-  "User": "<Username>",
+  "Hostname": "<MachineName>",
+  "OS" Version: "<OS Version String>",
+  "OS Architecture": "<OS Architecture String>",
+  "OS Description": "<OS Description String>",
+  "Framework Description": "<Runtime Version Information>",
+  "Username": "<Username>",
   "Path": "<The Content Root Path",
   "Environment": "<ASPNETCORE_ENVIRONMENT Variable Value>",
-  "Runtime": "<Runtime Version Information>",
-  "Assembly": "<Assembly Information Version>"
+  "Assembly": "<Assembly Information Version>"            
 }
 ```
 If any of the values are not able to be determined they will be substituted with ```"N/A"```.
