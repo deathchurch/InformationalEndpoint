@@ -34,13 +34,15 @@ namespace InformationalEndpoint
                 using var writer = new Utf8JsonWriter(context?.Response?.BodyWriter, options);
 
                 writer.WriteStartObject();
-                writer.WriteString("Server", Environment.MachineName ?? "N/A");
-                writer.WriteString("OS", Environment.OSVersion.VersionString ?? "N/A");
-                writer.WriteString("User", Environment.UserName ?? "N/A");
+                writer.WriteString("Hostname", Environment.MachineName ?? "N/A");
+                writer.WriteString("OS Version", Environment.OSVersion.VersionString ?? "N/A");
+                writer.WriteString("OS Architecture", RuntimeInformation.OSArchitecture.ToString() ?? "N/A");
+                writer.WriteString("OS Description", RuntimeInformation.OSDescription ?? "N/A");
+                writer.WriteString("Framework Description", RuntimeInformation.FrameworkDescription ?? "N/A");
+                writer.WriteString("Username", Environment.UserName ?? "N/A");
                 writer.WriteString("Path", env.ContentRootPath.ToUpper() ?? "N/A");
                 writer.WriteString("Environment", Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "N/A");
-                writer.WriteString("Runtime", RuntimeInformation.FrameworkDescription ?? "N/A");
-                writer.WriteString("Assembly", Assembly.GetEntryAssembly()?.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion ?? "N/A");
+                writer.WriteString("Assembly Version", Assembly.GetEntryAssembly()?.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion ?? "N/A");
                 writer.WriteEndObject();
 
                 return Task.CompletedTask;
